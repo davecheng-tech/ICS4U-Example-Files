@@ -50,11 +50,6 @@ class Person {
         return address.getFullAddress();
     }
 
-    public void celebrateBirthday() {
-        this.age += 1;
-        System.out.println(name + " is now " + age + " years old.");
-    }
-
     public boolean isSameAge(Person otherPerson) {
         return this.age == otherPerson.age;
     }
@@ -90,9 +85,5 @@ class Employee extends Person {
     public void promote(double salaryIncrease) {
         this.salary += salaryIncrease;
         System.out.println(getName() + " has been promoted. New salary: " + salary);
-    }
-
-    public boolean hasHigherSalary(Employee otherEmployee) {
-        return this.salary > otherEmployee.salary;
     }
 }
